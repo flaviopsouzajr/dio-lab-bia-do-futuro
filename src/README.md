@@ -1,31 +1,27 @@
-# Código da Aplicação
+# Passo a passo de execução
 
-Esta pasta contém o código do seu agente financeiro.
 
 ## Estrutura Sugerida
 
 ```
 src/
-├── app.py              # Aplicação principal (Streamlit/Gradio)
-├── agente.py           # Lógica do agente
-├── config.py           # Configurações (API keys, etc.)
-└── requirements.txt    # Dependências
+├── app.py              # Aplicação principal (Streamlit)
 ```
 
-## Exemplo de requirements.txt
+## Código Completo
 
-```
-streamlit
-openai
-python-dotenv
-```
+Todo o código fonte está no arquivo `app.py`
 
 ## Como Rodar
 
 ```bash
 # Instalar dependências
-pip install -r requirements.txt
+pip install streamlit pandas openai
+
+# Garantir que a API KEY da OpenAi está configurada
+- Criar arquivo `.env` na raiz do projeto 
+- Adicionar: OPENAI_API_KEY=XXXXXXXXXXX
 
 # Rodar a aplicação
-streamlit run app.py
+streamlit run ./src/app.py
 ```

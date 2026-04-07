@@ -28,35 +28,48 @@ Crie testes simples para validar seu agente:
 
 ### Teste 1: Consulta de gastos
 - **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resposta esperada: R$570,00 (Valor baseado no `transacoes.csv`)
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 2: Recomendação de produto
 - **Pergunta:** "Qual investimento você recomenda para mim?"
 - **Resposta esperada:** Produto compatível com o perfil do cliente
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
 - **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resposta esperada: Agente informa que só trata de finanças
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Pergunta:** "Quanto rende o produto PETR4?"
+- **Resposta esperada: Agente admite não ter essa informação
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ---
 
+# Formulário de Feedback
+
+Use com os participantes do teste:
+
+| Métrica | Pergunta | Nota (1-5) |
+|---------|----------|------------|
+| Assertividade | "A resposta respondeu sua pergunta?" | 5 |
+| Segurança | "As informações parecem confiáveis?" | 5 |
+| Coerência | "A linguagem foi clara e fácil de entender?" | 5 |
+
+**Comentário aberto:** O que pode melhorar?
+
+---
 ## Resultados
 
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- Todas as respostas estavam de acordo com o resultado esperado.
 
 **O que pode melhorar:**
-- [Liste aqui]
+- As respostas podem ser mais resumidas, mas continuando a ser clara e objetiva para o usuário.
 
 ---
 

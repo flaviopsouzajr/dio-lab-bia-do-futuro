@@ -25,3 +25,8 @@ pip install streamlit pandas openai
 # Rodar a aplicação
 streamlit run ./src/app.py
 ```
+
+## Evidência de Execução
+
+<img width="1315" height="993" alt="Screenshot 2026-04-07 at 15 16 17" src="https://github.com/user-attachments/assets/2d629578-3513-4f60-bdc7-3cc6d7e3a1ff" />
+

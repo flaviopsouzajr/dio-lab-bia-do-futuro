@@ -1,149 +1,87 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 💰 José Finas — Educador Financeiro Virtual
 
-## Contexto
-
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+Um agente de IA que ensina finanças pessoais de forma simples, personalizada e sem enrolação.
 
 ---
 
-## O Que Você Deve Entregar
+## O Problema
 
-### 1. Documentação do Agente
+Mais de 60% dos brasileiros não entendem o básico de investimentos. A maioria quer aprender, mas se perde em conteúdos genéricos que não fazem sentido para a própria realidade.
 
-Defina **o que** seu agente faz e **como** ele funciona:
+## A Solução
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
+O **José Finas** é um educador financeiro virtual que usa os **seus próprios dados** como exemplo. Nada de teoria solta — ele olha para o seu extrato, seu perfil e seus objetivos, e explica de forma concreta e acessível.
 
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+> ⚠️ O José Finas **educa**, não aconselha. Ele nunca recomenda onde investir — apenas explica como cada produto funciona e o que você precisa saber para decidir com autonomia.
 
 ---
 
-### 2. Base de Conhecimento
-
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
-
----
-
-### 3. Prompts do Agente
-
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
+## Como Funciona
 
 ```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+Cliente → Interface Streamlit → LLM (GPT-4o) → Resposta personalizada
+                                      ↑
+                          Base de Conhecimento (CSV + JSON)
+```
+
+O agente carrega automaticamente o perfil do cliente, histórico de transações, atendimentos anteriores e produtos disponíveis — e usa tudo isso como contexto para responder.
+
+---
+
+## Base de Conhecimento
+
+| Arquivo | O que contém |
+|---|---|
+| `data/perfil_investidor.json` | Nome, renda, objetivos e perfil de risco |
+| `data/transacoes.csv` | Histórico de gastos por categoria |
+| `data/historico_atendimento.csv` | Atendimentos anteriores |
+| `data/produtos_financeiros.json` | Produtos disponíveis com risco e rentabilidade |
+
+---
+
+## Exemplos de Interação
+
+**"O que é CDI?"**
+> "CDI é a taxa que os bancos usam para emprestar dinheiro entre si. Quando um investimento rende '102% do CDI', significa que ele paga um pouco mais do que essa taxa. Faz sentido?"
+
+**"Onde estou gastando mais?"**
+> "Em outubro, sua maior despesa foi moradia (R$ 1.380), seguida de alimentação (R$ 570). Juntas, representam cerca de 79% dos seus gastos. Quer entender como organizar isso?"
+
+**"Onde devo investir meu dinheiro?"**
+> "Como educador financeiro, não posso recomendar onde investir — mas posso explicar como cada produto funciona para você decidir com mais segurança. Tem algum em específico que queira entender?"
+
+---
+
+## Como Rodar
+
+```bash
+# Instalar dependências
+pip install streamlit pandas openai
+
+# Configurar a chave da API
+echo "OPENAI_API_KEY=sua_chave_aqui" > .env
+
+# Rodar
+streamlit run src/app.py
 ```
 
 ---
 
-## Dicas Finais
+## Documentação
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+| Arquivo | Conteúdo |
+|---|---|
+| `docs/01-documentacao-agente.md` | Caso de uso, persona e arquitetura |
+| `docs/02-base-conhecimento.md` | Estratégia de dados e contexto |
+| `docs/03-prompts.md` | System prompt e edge cases |
+| `docs/04-metricas.md` | Testes e avaliação de qualidade |
+| `docs/05-pitch.md` | Roteiro do pitch de apresentação |
+
+---
+
+## Stack
+
+- **Interface:** Streamlit  
+- **LLM:** GPT-4o via OpenAI API  
+- **Dados:** CSV e JSON mockados  
+- **Linguagem:** Python

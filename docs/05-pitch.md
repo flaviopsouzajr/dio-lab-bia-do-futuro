@@ -34,16 +34,14 @@ Diferente de chatbots genéricos o José Finas usa SEUS dados como exemplo. Isso
 
 ## Checklist do Pitch
 
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+- [X] Duração máxima de 3 minutos
+- [X] Problema claramente definido
+- [X] Solução demonstrada na prática
+- [X] Diferencial explicado
+- [X] Áudio e vídeo com boa qualidade
 
 ---
 
 ## Link do Vídeo
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
-
-[Link do vídeo]
+[Link do vídeo](https://drive.google.com/file/d/1jLOTu8z_lLhsTdOyR5lqTqEUdwEUbpjL/view?usp=drive_link)
